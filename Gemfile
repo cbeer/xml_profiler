@@ -47,3 +47,6 @@ group :development do
 end
 
 gem 'nokogiri'
+gem 'blacklight', github: 'projectblacklight/blacklight', branch: 'dynamic-fields'
+gem 'rsolr'
+gem 'solr_wrapper', '>= 0.3'
