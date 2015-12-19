@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :resources
   mount Blacklight::Engine => '/'
 
   root to: 'catalog#index'
@@ -21,4 +22,6 @@ Rails.application.routes.draw do
       delete 'clear'
     end
   end
+
+  resources :resources
 end
